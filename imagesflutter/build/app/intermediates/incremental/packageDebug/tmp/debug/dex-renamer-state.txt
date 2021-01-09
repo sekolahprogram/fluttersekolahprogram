@@ -1,0 +1,4 @@
+#Sat Jan 09 11:32:42 WIB 2021
+base.0=/home/ubuntu/AndroidStudioProjects/fluttersekolahprogram/imagesflutter/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
