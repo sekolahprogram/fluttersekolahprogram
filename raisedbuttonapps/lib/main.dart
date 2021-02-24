@@ -49,6 +49,29 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
               color: Colors.red,
+              onPressed: () {
+                ///ketika diklik akan menampilkan text button warna
+                ///pada console
+                print('Button warna');
+              },
+            ),
+            //menampilkan rounded dan borderside
+            RaisedButton(
+              child: Text(
+                'Button 3',
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(
+                  18.0,
+                ),
+                side: BorderSide(
+                  color: Colors.black,
+                ),
+              ),
+              color: Colors.greenAccent,
               onPressed: () {},
             ),
           ],
