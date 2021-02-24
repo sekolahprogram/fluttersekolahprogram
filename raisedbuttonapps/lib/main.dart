@@ -32,13 +32,24 @@ class MyHomePage extends StatelessWidget {
           children: [
             new RaisedButton(
               child: new Text(
-                'Ini Button',
+                'Button 1',
               ),
               onPressed: () {
                 print(
                   'Tulisan ini akan tampil di console ketika di klik',
                 );
               },
+            ),
+            new RaisedButton(
+              child: Text(
+                'Button 2',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              color: Colors.red,
+              onPressed: () {},
             ),
           ],
         ),
