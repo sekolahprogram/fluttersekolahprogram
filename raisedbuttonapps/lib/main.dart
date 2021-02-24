@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -72,8 +73,30 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
               color: Colors.greenAccent,
-              onPressed: () {},
+              onPressed: () {
+                print('Button 3');
+              },
             ),
+            RaisedButton(
+                padding: const EdgeInsets.all(
+                  18.0,
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(
+                    10.0,
+                  ),
+                  side: BorderSide(
+                    color: Colors.black,
+                  ),
+                ),
+                child: Text(
+                  'Button 4',
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+                color: Colors.blueAccent,
+                onPressed: () {})
           ],
         ),
       ),
